@@ -15,12 +15,12 @@ def getCipherMessage():
 	return cipher
 
 def getPublicKey():
-	with open('public_key.txt', 'r') as file:
+	with open('keys/public_key.txt', 'r') as file:
 		n, e = [int(x) for x in file.read().split(',')]
 	return n, e
 
 def getPrivateKey():
-	with open('private_key.txt', 'r') as file:
+	with open('keys/private_key.txt', 'r') as file:
 		d = int(file.read())
 	return d
 

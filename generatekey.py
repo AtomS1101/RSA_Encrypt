@@ -1,11 +1,11 @@
 import random
 
 def savePrivateKey(d):
-	with open('private_key.txt', 'w') as file:
+	with open('keys/private_key.txt', 'w') as file:
 		file.write(f"{d}")
 
 def savePublicKey(n, e):
-	with open('public_key.txt', 'w') as file:
+	with open('keys/public_key.txt', 'w') as file:
 		file.write(f"{n},{e}")
 
 def gcd(a, b):
